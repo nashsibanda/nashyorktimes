@@ -1,0 +1,72 @@
+header {
+    @include flex-down;
+
+    .auth-menu {
+        @include flex-across;
+        align-items: center;
+        font-family: $sansserif;
+        margin: 0.3em 0;
+        font-size: $smfont;
+
+        .menu-and-search,
+        .session-buttons {
+            width: 16.5em;
+        }
+
+        .languages {
+            text-transform: uppercase;
+
+            a {
+                padding: 0 1em;
+            }
+        }
+
+        .session-buttons {
+            @include flex-across;
+            justify-content: space-between;
+
+            button {
+                @include big-button;
+            }
+        }
+    }
+
+    .masthead {
+        @include flex-across;
+        align-items: center;
+        padding: 0.5em 0;
+        border-bottom: 1px solid $lightgrey;
+
+        .date,
+        .weather {
+            width: 17em;
+            font-family: $sansserif;
+            font-size: 0.8em;
+        }
+
+        .weather {
+            text-align: right;
+        }
+
+        .logo {
+            font-size: 4em;
+        }
+    }
+
+    .main-menu {
+        @include flex-across;
+        padding: 0.2em 2em;
+
+        a {
+            font-family: $sansserif;
+            font-size: $smfont;
+            padding: 0.5em;
+
+            @media (hover: hover) {
+                &:hover {
+                    background: $lightestgrey;
+                }
+            }
+        }
+    }
+}

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&family=Roboto+Slab:wght@300;400;700&family=UnifrakturMaguntia&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;400;700&family=Roboto+Slab:wght@300;400;700&family=Pirata+One&display=swap");
 html,
 body,
 header,
@@ -76,5 +76,129 @@ input[type="submit"] {
   content: "";
   display: block;
   clear: both;
+}
+
+body {
+  max-width: 1200px;
+  padding: 0 2em;
+  margin: 0 auto;
+}
+
+strong {
+  font-weight: 700;
+}
+
+.logo {
+  font-family: "Pirata One", cursive;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header .auth-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Work Sans", sans-serif;
+  margin: 0.3em 0;
+  font-size: 0.7em;
+}
+
+header .auth-menu .menu-and-search,
+header .auth-menu .session-buttons {
+  width: 16.5em;
+}
+
+header .auth-menu .languages {
+  text-transform: uppercase;
+}
+
+header .auth-menu .languages a {
+  padding: 0 1em;
+}
+
+header .auth-menu .session-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  justify-content: space-between;
+}
+
+header .auth-menu .session-buttons button {
+  padding: 0.7em 1em;
+  background-color: #567b95;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 0.3em;
+}
+
+header .masthead {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.5em 0;
+  border-bottom: 1px solid #bbb;
+}
+
+header .masthead .date,
+header .masthead .weather {
+  width: 17em;
+  font-family: "Work Sans", sans-serif;
+  font-size: 0.8em;
+}
+
+header .masthead .weather {
+  text-align: right;
+}
+
+header .masthead .logo {
+  font-size: 4em;
+}
+
+header .main-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0.2em 2em;
+}
+
+header .main-menu a {
+  font-family: "Work Sans", sans-serif;
+  font-size: 0.7em;
+  padding: 0.5em;
+}
+
+@media (hover: hover) {
+  header .main-menu a:hover {
+    background: #efefef;
+  }
 }
 /*# sourceMappingURL=style.css.map */
