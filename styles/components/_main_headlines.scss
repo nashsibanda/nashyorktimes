@@ -7,7 +7,8 @@
         @include flex-across;
         padding: 1em 1em 1em 0;
         width: 75%;
-        box-sizing: border-box;
+        border-right: 1px solid $lightergrey;
+        margin-right: -1px;
 
         .text {
             width: 80%;
@@ -60,6 +61,7 @@
             .live-alert {
                 @include flex-across;
                 justify-content: flex-start;
+                align-items: center;
                 color: $red;
 
                 h2 {

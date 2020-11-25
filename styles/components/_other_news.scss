@@ -10,7 +10,8 @@
         @include flex-across;
 
         & > article,
-        & > div {
+        & > div,
+        & > a {
             padding-left: 1em;
             padding-right: 1em;
             border-left: 1px solid $lightergrey;
@@ -58,7 +59,7 @@
                     flex-basis: 35%;
                 }
 
-                & > img {
+                & > a {
                     margin-left: 1em;
                     width: 40%;
                 }

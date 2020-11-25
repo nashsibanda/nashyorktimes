@@ -1,3 +1,7 @@
+* {
+    transition: color 0.2s ease;
+}
+
 body {
     max-width: 1200px;
     padding: 0 2em;
@@ -35,6 +39,16 @@ article {
     h2 {
         font-family: $serif;
         font-weight: 700;
+    }
+}
+
+@media (hover: hover) {
+    a:hover {
+        color: $darkgrey;
+
+        .logo {
+            color: black;
+        }
     }
 }
 

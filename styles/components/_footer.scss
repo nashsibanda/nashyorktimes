@@ -1,0 +1,96 @@
+footer {
+    border-top: 3px double $lightergrey;
+    padding-top: 0.7em;
+
+    .logo {
+        font-size: 1.8em;
+    }
+
+    .links {
+        border-bottom: 1px solid $lightergrey;
+        padding-bottom: 1em;
+        @include flex-across;
+        font-family: $sansserif;
+        margin-top: 1em;
+
+        .link-tree {
+            ul {
+                li:first-child {
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    color: $darkgrey;
+                }
+            }
+            flex-basis: 83%;
+            @include flex-across;
+            border-right: 1px solid $lightergrey;
+
+            ul {
+                flex-basis: 20%;
+
+                li {
+                    margin: 0.4em 0;
+                    font-size: 0.9em;
+
+                    &:first-child {
+                        margin-bottom: 1em;
+                    }
+                }
+            }
+        }
+
+        .interactions {
+            flex-basis: 17%;
+            padding-left: 1em;
+
+            ul:first-of-type {
+                border-bottom: 1px solid $lightergrey;
+
+                li:first-child {
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    color: $darkgrey;
+                }
+            }
+
+            li {
+                margin: 0.4em 0;
+                font-size: 0.9em;
+            }
+
+            .icon-link {
+                padding: 0.2em 0;
+                font-weight: 700;
+                font-size: 1.1em;
+
+                a {
+                    @include flex-across;
+                    justify-content: flex-start;
+
+                    img {
+                        width: 20px;
+                        margin-right: 0.5em;
+                    }
+                }
+            }
+        }
+    }
+
+    .copyright {
+        @include flex-down;
+        font-family: $sansserif;
+        font-size: 0.8em;
+
+        ul {
+            @include flex-across;
+            padding: 1em 0;
+        }
+
+        div {
+            color: $grey;
+            a {
+                color: $blue;
+            }
+        }
+    }
+}
