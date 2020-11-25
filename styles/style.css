@@ -514,6 +514,7 @@ footer .copyright div a {
   width: 33%;
   font-size: 0.9em;
   border-left: 1px solid #ddd;
+  padding-right: 1em;
 }
 
 .features-banner .feature:first-child {
