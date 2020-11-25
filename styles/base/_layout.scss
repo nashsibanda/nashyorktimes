@@ -12,6 +12,10 @@ strong {
 
 main {
     @include flex-down;
+    padding-bottom: 2em;
+    margin-bottom: 3em;
+    border-bottom: 4px double #000;
+
     & > section {
         width: 100%;
     }
