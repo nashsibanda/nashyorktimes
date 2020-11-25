@@ -2,4 +2,64 @@
     @include flex-down;
     margin-left: 1em;
     border-top: 4px double black;
+
+    & > section > h2 {
+        font-size: 1.3em;
+        margin-top: 0.4em;
+        margin-bottom: 0.4em;
+    }
+
+    .columnists {
+        @include flex-across;
+
+        padding-top: 0.8em;
+
+        & > div {
+            padding-left: 0.8em;
+
+            &:first-child {
+                border-right: 1px solid $lightergrey;
+                padding-left: 0;
+                padding-right: 0.8em;
+            }
+        }
+    }
+
+    .opinion {
+        @include flex-down;
+
+        article {
+            @include flex-down;
+            border-bottom: 1px solid $lightergrey;
+            padding-top: 0.5em;
+            padding-bottom: 0.5em;
+
+            .byline {
+                color: $grey;
+            }
+
+            &.with-image {
+                @include flex-across;
+
+                img {
+                    width: 50%;
+                    margin-left: 1em;
+                }
+            }
+
+            .article-info {
+                * {
+                    margin-bottom: 0.4em;
+                }
+
+                &.with-image {
+                    img {
+                        float: right;
+                        width: 30px;
+                        border-radius: 100%;
+                    }
+                }
+            }
+        }
+    }
 }

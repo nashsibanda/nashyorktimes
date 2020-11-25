@@ -1,5 +1,6 @@
 .features-banner {
     @include flex-across;
+    align-items: center;
     border-top: 1px solid black;
     border-bottom: 4px double black;
     padding: 0.4em 0;

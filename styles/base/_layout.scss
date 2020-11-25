@@ -3,7 +3,7 @@ body {
     padding: 0 2em;
     margin: 0 auto;
     font-family: $serif;
-    font-size: 0.9em;
+    font-size: 14px;
 }
 
 strong {
@@ -42,10 +42,10 @@ article {
     @include flex-across;
 
     .news {
-        width: 67%;
+        width: 60%;
     }
 
     .editorial {
-        width: 33%;
+        width: 40%;
     }
 }

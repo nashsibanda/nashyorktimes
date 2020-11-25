@@ -86,7 +86,7 @@ body {
   padding: 0 2em;
   margin: 0 auto;
   font-family: "Roboto Slab", serif;
-  font-size: 0.9em;
+  font-size: 14px;
 }
 
 strong {
@@ -136,14 +136,18 @@ article h2 {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .other-stories .news {
-  width: 67%;
+  width: 60%;
 }
 
 .other-stories .editorial {
-  width: 33%;
+  width: 40%;
 }
 
 header {
@@ -166,6 +170,10 @@ header .auth-menu {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -197,6 +205,10 @@ header .auth-menu .session-buttons {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   justify-content: space-between;
 }
 
@@ -221,6 +233,10 @@ header .masthead {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -253,6 +269,10 @@ header .main-menu {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   padding: 0.2em 2em;
 }
 
@@ -278,6 +298,13 @@ header .main-menu a {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-top: 1px solid black;
   border-bottom: 4px double black;
   padding: 0.4em 0;
@@ -293,6 +320,10 @@ header .main-menu a {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -328,6 +359,10 @@ header .main-menu a {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   width: 100%;
   padding: 1.5em 0;
 }
@@ -342,6 +377,10 @@ header .main-menu a {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   padding: 1em 1em 1em 0;
   width: 75%;
   -webkit-box-sizing: border-box;
@@ -420,6 +459,10 @@ header .main-menu a {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -471,6 +514,10 @@ header .main-menu a {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .other-stories > .news .article-row > article,
@@ -546,6 +593,10 @@ header .main-menu a {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .other-stories > .news .article-row > article.with-image .main,
@@ -617,5 +668,96 @@ header .main-menu a {
           flex-direction: column;
   margin-left: 1em;
   border-top: 4px double black;
+}
+
+.other-stories > .editorial > section > h2 {
+  font-size: 1.3em;
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
+}
+
+.other-stories > .editorial .columnists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-top: 0.8em;
+}
+
+.other-stories > .editorial .columnists > div {
+  padding-left: 0.8em;
+}
+
+.other-stories > .editorial .columnists > div:first-child {
+  border-right: 1px solid #ddd;
+  padding-left: 0;
+  padding-right: 0.8em;
+}
+
+.other-stories > .editorial .opinion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.other-stories > .editorial .opinion article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-bottom: 1px solid #ddd;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.other-stories > .editorial .opinion article .byline {
+  color: #999;
+}
+
+.other-stories > .editorial .opinion article.with-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.other-stories > .editorial .opinion article.with-image img {
+  width: 50%;
+  margin-left: 1em;
+}
+
+.other-stories > .editorial .opinion article .article-info * {
+  margin-bottom: 0.4em;
+}
+
+.other-stories > .editorial .opinion article .article-info.with-image img {
+  float: right;
+  width: 30px;
+  border-radius: 100%;
 }
 /*# sourceMappingURL=style.css.map */
