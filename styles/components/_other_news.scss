@@ -1,0 +1,105 @@
+.other-stories > .news {
+    @include flex-down;
+    padding-right: 1em;
+    border-right: 1px solid $lightergrey;
+    width: 100%;
+
+    .article-row {
+        border-top: 1px solid black;
+        padding: 1em 0;
+        @include flex-across;
+
+        & > article,
+        & > div {
+            padding-left: 1em;
+            padding-right: 1em;
+            border-left: 1px solid $lightergrey;
+
+            h2 {
+                margin-bottom: 0.4em;
+            }
+
+            &.w1-2 {
+                flex-basis: 50%;
+                h2 {
+                    font-size: 1.2em;
+                }
+            }
+            &.w1-4 {
+                flex-basis: 25%;
+            }
+            &.w3-4 {
+                flex-basis: 75%;
+                h2 {
+                    font-size: 1.2em;
+                }
+            }
+
+            &.w1-1 {
+                flex-basis: 100%;
+                h2 {
+                    font-size: 1.2em;
+                }
+            }
+
+            &:first-child {
+                padding-left: 0;
+                border-left: none;
+            }
+
+            &:last-child {
+                padding-right: 0;
+            }
+
+            &.with-image {
+                @include flex-across;
+
+                .main {
+                    flex-basis: 35%;
+                }
+
+                & > img {
+                    margin-left: 1em;
+                    width: 40%;
+                }
+
+                & > figure {
+                    flex-basis: 60%;
+                }
+
+                .sub {
+                    flex-basis: 25%;
+                    margin-left: 1em;
+
+                    h2 {
+                        font-size: 1em;
+                    }
+                }
+
+                .caption {
+                    padding-bottom: 1em;
+                    border-bottom: 1px solid $lightergrey;
+
+                    & + * {
+                        padding-top: 1em;
+                    }
+                }
+            }
+
+            .caption {
+                border-left: none;
+
+                p {
+                    color: $grey;
+                    font-size: 0.8em;
+                }
+
+                p.credit {
+                    margin-top: 0.4em;
+                    color: $lightgrey;
+                    font-size: 0.7em;
+                }
+            }
+        }
+    }
+}

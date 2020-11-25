@@ -126,6 +126,26 @@ article h2 {
   font-family: "Pirata One", cursive;
 }
 
+.other-stories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.other-stories .news {
+  width: 67%;
+}
+
+.other-stories .editorial {
+  width: 33%;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -143,6 +163,9 @@ header .auth-menu {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -171,6 +194,9 @@ header .auth-menu .session-buttons {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   justify-content: space-between;
 }
 
@@ -192,6 +218,9 @@ header .masthead {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -221,6 +250,9 @@ header .main-menu {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   padding: 0.2em 2em;
 }
 
@@ -243,6 +275,9 @@ header .main-menu a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   border-top: 1px solid black;
   border-bottom: 4px double black;
   padding: 0.4em 0;
@@ -255,6 +290,9 @@ header .main-menu a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -287,6 +325,9 @@ header .main-menu a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   width: 100%;
   padding: 1.5em 0;
 }
@@ -298,6 +339,9 @@ header .main-menu a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   padding: 1em 1em 1em 0;
   width: 75%;
   -webkit-box-sizing: border-box;
@@ -373,6 +417,9 @@ header .main-menu a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -397,5 +444,178 @@ header .main-menu a {
   content: "•";
   position: absolute;
   left: -0.8em;
+}
+
+.other-stories > .news {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-right: 1em;
+  border-right: 1px solid #ddd;
+  width: 100%;
+}
+
+.other-stories > .news .article-row {
+  border-top: 1px solid black;
+  padding: 1em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.other-stories > .news .article-row > article,
+.other-stories > .news .article-row > div {
+  padding-left: 1em;
+  padding-right: 1em;
+  border-left: 1px solid #ddd;
+}
+
+.other-stories > .news .article-row > article h2,
+.other-stories > .news .article-row > div h2 {
+  margin-bottom: 0.4em;
+}
+
+.other-stories > .news .article-row > article.w1-2,
+.other-stories > .news .article-row > div.w1-2 {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.other-stories > .news .article-row > article.w1-2 h2,
+.other-stories > .news .article-row > div.w1-2 h2 {
+  font-size: 1.2em;
+}
+
+.other-stories > .news .article-row > article.w1-4,
+.other-stories > .news .article-row > div.w1-4 {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+
+.other-stories > .news .article-row > article.w3-4,
+.other-stories > .news .article-row > div.w3-4 {
+  -ms-flex-preferred-size: 75%;
+      flex-basis: 75%;
+}
+
+.other-stories > .news .article-row > article.w3-4 h2,
+.other-stories > .news .article-row > div.w3-4 h2 {
+  font-size: 1.2em;
+}
+
+.other-stories > .news .article-row > article.w1-1,
+.other-stories > .news .article-row > div.w1-1 {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.other-stories > .news .article-row > article.w1-1 h2,
+.other-stories > .news .article-row > div.w1-1 h2 {
+  font-size: 1.2em;
+}
+
+.other-stories > .news .article-row > article:first-child,
+.other-stories > .news .article-row > div:first-child {
+  padding-left: 0;
+  border-left: none;
+}
+
+.other-stories > .news .article-row > article:last-child,
+.other-stories > .news .article-row > div:last-child {
+  padding-right: 0;
+}
+
+.other-stories > .news .article-row > article.with-image,
+.other-stories > .news .article-row > div.with-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.other-stories > .news .article-row > article.with-image .main,
+.other-stories > .news .article-row > div.with-image .main {
+  -ms-flex-preferred-size: 35%;
+      flex-basis: 35%;
+}
+
+.other-stories > .news .article-row > article.with-image > img,
+.other-stories > .news .article-row > div.with-image > img {
+  margin-left: 1em;
+  width: 40%;
+}
+
+.other-stories > .news .article-row > article.with-image > figure,
+.other-stories > .news .article-row > div.with-image > figure {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+}
+
+.other-stories > .news .article-row > article.with-image .sub,
+.other-stories > .news .article-row > div.with-image .sub {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  margin-left: 1em;
+}
+
+.other-stories > .news .article-row > article.with-image .sub h2,
+.other-stories > .news .article-row > div.with-image .sub h2 {
+  font-size: 1em;
+}
+
+.other-stories > .news .article-row > article.with-image .caption,
+.other-stories > .news .article-row > div.with-image .caption {
+  padding-bottom: 1em;
+  border-bottom: 1px solid #ddd;
+}
+
+.other-stories > .news .article-row > article.with-image .caption + *,
+.other-stories > .news .article-row > div.with-image .caption + * {
+  padding-top: 1em;
+}
+
+.other-stories > .news .article-row > article .caption,
+.other-stories > .news .article-row > div .caption {
+  border-left: none;
+}
+
+.other-stories > .news .article-row > article .caption p,
+.other-stories > .news .article-row > div .caption p {
+  color: #999;
+  font-size: 0.8em;
+}
+
+.other-stories > .news .article-row > article .caption p.credit,
+.other-stories > .news .article-row > div .caption p.credit {
+  margin-top: 0.4em;
+  color: #bbb;
+  font-size: 0.7em;
+}
+
+.other-stories > .editorial {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 1em;
+  border-top: 4px double black;
 }
 /*# sourceMappingURL=style.css.map */

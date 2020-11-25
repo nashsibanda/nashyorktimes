@@ -17,6 +17,7 @@ $smfont: 0.7rem;
 @mixin flex-across {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
 }
 
 @mixin flex-down {

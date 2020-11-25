@@ -37,3 +37,15 @@ article {
 .logo {
     font-family: $masthead;
 }
+
+.other-stories {
+    @include flex-across;
+
+    .news {
+        width: 67%;
+    }
+
+    .editorial {
+        width: 33%;
+    }
+}

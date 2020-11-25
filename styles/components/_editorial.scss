@@ -1,0 +1,5 @@
+.other-stories > .editorial {
+    @include flex-down;
+    margin-left: 1em;
+    border-top: 4px double black;
+}
