@@ -17,6 +17,16 @@ main {
     }
 }
 
+p {
+    color: $darkgrey;
+}
+
+figcaption {
+    color: $grey;
+    font-family: $sansserif;
+    font-size: $smfont;
+}
+
 article {
     h2 {
         font-family: $serif;

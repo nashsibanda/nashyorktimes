@@ -5,13 +5,14 @@ $serif: "Roboto Slab", serif;
 $masthead: "Pirata One", cursive;
 
 $blue: #567b95;
+$red: rgb(163, 41, 41);
 $darkgrey: #666;
 $grey: #999;
 $lightgrey: #bbb;
 $lightergrey: #ddd;
 $lightestgrey: #efefef;
 
-$smfont: 0.8em;
+$smfont: 0.7rem;
 
 @mixin flex-across {
     display: flex;
@@ -31,4 +32,14 @@ $smfont: 0.8em;
     text-transform: uppercase;
     font-weight: 700;
     border-radius: 0.3em;
+}
+
+@mixin bulleted {
+    position: relative;
+
+    &::before {
+        content: "•";
+        position: absolute;
+        left: -0.8em;
+    }
 }

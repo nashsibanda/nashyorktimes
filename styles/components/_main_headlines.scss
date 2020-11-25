@@ -1,0 +1,81 @@
+.main-headlines {
+    @include flex-across;
+    width: 100%;
+    padding: 1.5em 0;
+
+    .main-story {
+        @include flex-across;
+        padding: 1em 1em 1em 0;
+        width: 75%;
+        box-sizing: border-box;
+
+        .text {
+            width: 80%;
+            margin-right: 3em;
+
+            * {
+                margin-bottom: 0.5rem;
+            }
+
+            h2 {
+                font-size: 1.7em;
+            }
+
+            p {
+                @include bulleted;
+            }
+        }
+    }
+
+    .other-main-stories {
+        @include flex-down;
+        flex-shrink: 0;
+        width: 25%;
+        border-left: 1px solid $lightergrey;
+        padding-left: 1em;
+
+        .main {
+            border-bottom: 1px solid $lightergrey;
+            padding-bottom: 1em;
+
+            h2 {
+                font-size: 1.2em;
+            }
+        }
+
+        .sub {
+            padding-top: 1em;
+            font-size: 0.9em;
+            font-family: $sansserif;
+
+            * {
+                margin-bottom: 0.6em;
+            }
+
+            h2,
+            h3 {
+                font-weight: 700;
+            }
+
+            .live-alert {
+                @include flex-across;
+                justify-content: flex-start;
+                color: $red;
+
+                h2 {
+                    text-transform: uppercase;
+                }
+
+                span {
+                    margin-left: 1em;
+                    font-size: 0.8em;
+                }
+            }
+
+            p {
+                @include bulleted;
+                margin-left: 0.5em;
+            }
+        }
+    }
+}
