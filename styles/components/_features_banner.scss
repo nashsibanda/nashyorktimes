@@ -1,0 +1,33 @@
+.features-banner {
+    @include flex-across;
+    border-top: 1px solid black;
+    border-bottom: 4px double black;
+    padding: 0.4em 0;
+
+    .feature {
+        @include flex-across;
+        justify-content: flex-start;
+        align-items: center;
+        width: 33%;
+        font-size: 0.8em;
+        border-left: 1px solid $lightergrey;
+
+        &:first-child {
+            border-left: none;
+        }
+
+        h2 {
+            font-size: 1.2em;
+        }
+
+        p {
+            color: $darkgrey;
+        }
+
+        img {
+            width: 40px;
+            height: 40px;
+            padding: 0 1em;
+        }
+    }
+}
